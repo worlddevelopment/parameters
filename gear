@@ -20,3 +20,23 @@ Or deriving d.greatest:
 
 => This is the reason to not list the greatest diameter of a gear in its file name.
 
+
+
+
+Gear module (metric pitches) is stored as redundant information:
+---
+
+module_si = d.pitch / teeth.count.
+It is given as millimeters:
+module = d.pitch / teeth.count * 1000
+
+
+Gears are compatible when their respective module is equal.
+Thus filtering by module is essential.
+And therefore the module is stored in the filelink.
+
+To prevent redundant information, the teeth count is not stored.
+Because determining the transmission ratio of gears via dividing the respective teeth count is equivalent to dividing the equivalent pitch diameter d.pitch.
+
+=> The stored information is adequate for filtering without calculations even without storing the teeth count.
+
