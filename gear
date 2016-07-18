@@ -1,0 +1,22 @@
+
+# http://www.engineersedge.com/gear_formula.htm
+
+d.greatest = (n+2) / diametral pitch =: dp  ||  dp = n / d.pitch
+
+<=> d.greatest = (n+2) / n * d.pitch
+<=> d.greatest = n/n (1 + 2/n) / 1 * d.pitch
+<=> d.greatest = (1 + 2/n) * d.pitch
+<=> 2/n = d.greatest / d.pitch - 1
+<=> 2 / (d.greatest / d.pitch - 1) = n
+
+
+Exempli gratia:
+n = 12, d.pitch = .024, d.greatest = .028
+
+=> n = 2 / (.028 / .024 - 1) = 12
+
+Or deriving d.greatest:
+=> d.greatest = (1 + 2/12) * .024 = .028
+
+=> This is the reason to not list the greatest diameter of a gear in its file name.
+
